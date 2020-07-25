@@ -2,7 +2,7 @@
   .header {
     height: auto;
     width: 100%;
-    background: skyblue;
+    background: rgb(190, 10, 70);
     box-sizing: border-box;
     padding: 7px;
   }
@@ -32,6 +32,9 @@
   }
   .header .menu .logo {
     flex: 1 0 auto;
+  }
+  .logo{
+    color: white;
   }
 </style>
 
@@ -65,7 +68,7 @@
 
 <div class="header">
   <ul class="menu">
-    <li class="logo"><img src={logoUrl} alt="logo" /></li>
+    <li class="logo"><h1 class="logo">EDC 8 Podcast Site</h1></li>
     {#each menuOptions as option}
       <li
         class="menuItem{option.active ? ' active' : ''}"
